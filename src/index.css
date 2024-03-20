@@ -1,0 +1,55 @@
+@import "./fonts.css";
+
+:root {
+  --primary-black-color: #1A1919;
+  --secondary-black-color: #060E1E;
+  --blue-color: #316FEA;
+  --hover-color: #2169f9;
+  --primary-grey-color: #BEC5CC;
+  --secondary-grey-color: #E3E6E9;
+  --background-color: #fffefe;
+  --placeholder-color: #A1ABB5;
+  --white-color: #FFFFFF;
+  --eye-icon-color: #67717B;
+  --transition-duration: 500ms;
+  --transition-timing-function: linear;
+  --default-scale: 1.1;
+  --error-color: red;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: var(--primary-black-color);
+  background: var(--background-color);
+  font-family: Basis Grotesque Pro;
+  font-weight: 500;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  display: block;
+}
+
+button {
+  cursor: pointer;
+}
+
+*::placeholder {
+  color: var(--placeholder-color);
+  font-family: Basis Grotesque Pro;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+}
