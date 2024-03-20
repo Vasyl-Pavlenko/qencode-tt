@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 export const StyledLink = styled.p`
+  margin-left: 2px;
   margin-bottom: 30px;
   text-align: right;
 
