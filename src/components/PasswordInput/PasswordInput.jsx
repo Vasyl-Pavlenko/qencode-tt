@@ -5,7 +5,8 @@ export const PasswordInput = ({
   name,
   label = '',
   register,
-  password,
+  errors,
+  errorMessage,
   toggleInputType,
   isButton,
   containerClassName,
@@ -25,8 +26,7 @@ export const PasswordInput = ({
           type={isButton ? 'text' : 'password'}
           placeholder="Password"
         />
-        
-        <p className="errorMessage">{password?.message}</p>
+        <p className="errorMessage">{errors[name]?.message}</p>
 
         <div onClick={() => toggleInputType(name)} className="eyeButton">
           {isButton ? <EyeOffIcon alt="Hide Password" /> : <EyeIcon alt="Show Password" />}

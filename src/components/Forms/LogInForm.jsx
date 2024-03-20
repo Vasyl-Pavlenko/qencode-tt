@@ -57,7 +57,8 @@ export const LogInForm = () => {
             id="password"
             name="password"
             register={register}
-            errors={password}
+            errors={errors}
+            errorMessage={errors.password?.message}
             toggleInputType={toggleInputType}
             isButton={isButtonActive}
             containerClassName="passwordInputContainer"

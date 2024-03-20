@@ -25,8 +25,6 @@ export const NewPasswordForm = () => {
     resolver: yupResolver(resetPasswordSchema),
   });
 
-  const {password} = errors;
-
   const toggleInputType = (inputName) => {
     if (inputName === 'password') {
       setIsButtonPassword(!isButtonPassword);
@@ -70,7 +68,7 @@ export const NewPasswordForm = () => {
         name="password"
         label="Password"
         register={register}
-        errors={password}
+        errors={errors}
         toggleInputType={toggleInputType}
         isButton={isButtonPassword}
         containerClassName="newPasswordInputContainer"
@@ -81,7 +79,7 @@ export const NewPasswordForm = () => {
         name="password_confirm"
         label="Confirm Password"
         register={register}
-        errors={password}
+        errors={errors}
         toggleInputType={toggleInputType}
         isButton={isButtonConfirmPassword}
         containerClassName="newPasswordInputContainer"
